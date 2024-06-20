@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    margin: 0;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #03dac6; /* Light Purple */
+}
+
+.schedule {
+    margin-top: 20px;
+}
+
+.match-day {
+    margin-bottom: 20px;
+}
+
+.match-day h2 {
+    color: #03dac6; /* Teal */
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #333333;
+}
+
+.match:nth-child(even) {
+    background-color: #2c2c2c;
+}
+
+.team {
+    flex: 2;
+    color: #ffffff;
+}
+
+.discipline {
+    flex: 1;
+    text-align: center;
+    color: #F3CAB9; /* Light Purple */
+}
+
+.time {
+    flex: 0 0 100px;
+    text-align: right;
+    color: #03dac6; /* Teal */
+}
+
+.venue {
+    flex: 0 0 150px;
+    text-align: right;
+    color: #caf7ff; /* Light Blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .match {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .team, .discipline, .time, .venue {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .time, .venue {
+        flex: 1;
+    }
+}
